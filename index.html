@@ -1,3 +1,12 @@
+  <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+
+    </script>
 <h1 style="text-align: center;"><span style="color: #0000ff;"><strong>Saii</strong></span></h1>
 <table style="margin-left: auto; margin-right: auto;">
 <tbody>
