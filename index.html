@@ -189,7 +189,7 @@
         <small>(Sebs)</small>
         <button onclick="toggleMainButton(this);">Hide Main Button</button>
         <small>(It hides/shows main button)</small>
-        <button id="btnTime" onclick="sendTime(10);">Send time</button>
+        <button id="btnTime" onclick="sendTime();">Send time</button>
         <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
     </div>
 
@@ -264,7 +264,7 @@
         Telegram.WebApp.close();
     }
 
-    function sendTime(spam) {
+    function sendTime() {
         
             Telegram.WebApp.sendData(disnea.toString());
         
